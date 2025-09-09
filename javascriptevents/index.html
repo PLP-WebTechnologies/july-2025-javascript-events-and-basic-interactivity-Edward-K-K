@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interactive Web Pages with JavaScript</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Pages with JavaScript</h1>
+    </header>
+
+    <!-- Part 1: JavaScript Event Handling and Interactive Elements -->
+    <section id="part1">
+        <h2>Part 1: JavaScript Event Handling and Interactive Elements</h2>
+        <p>Click the buttons to see event handling in action.</p>
+        <button id="messageButton">Show Message</button>
+        <p id="messageOutput"></p>
+        <button id="toggleButton">Toggle Content</button>
+        <div id="toggleContent" style="display:none; margin-top:10px; padding:10px; background:#eee;">
+            This content is toggled by the button above.
+        </div>
+    </section>
+
+    <!-- Part 2: Building Interactive Elements -->
+    <section id="part2">
+        <h2>Part 2: Building Interactive Elements</h2>
+        <p>Try the interactive features below.</p>
+
+        <!-- Light/Dark Mode Toggle -->
+        <button id="modeToggle">Toggle Light/Dark Mode</button>
+
+        <!-- Counter -->
+        <div style="margin-top:20px;">
+            <button id="counterDecrement">-</button>
+            <span id="counterValue" style="margin: 0 10px;">0</span>
+            <button id="counterIncrement">+</button>
+        </div>
+
+        <!-- Collapsible FAQ -->
+        <div style="margin-top:20px;">
+            <button class="faqQuestion">What is JavaScript?</button>
+            <div class="faqAnswer" style="display:none; padding:5px 10px; background:#f9f9f9;">
+                JavaScript is a programming language used to make web pages interactive.
+            </div>
+            <button class="faqQuestion">Why use event listeners?</button>
+            <div class="faqAnswer" style="display:none; padding:5px 10px; background:#f9f9f9;">
+                Event listeners allow your code to respond to user actions dynamically.
+            </div>
+        </div>
+    </section>
+
+    <!-- Part 3: Form Validation with JavaScript -->
+    <section id="part3">
+        <h2>Part 3: Form Validation with JavaScript</h2>
+        <form id="userForm" novalidate>
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" /><br />
+            <small class="error" id="nameError"></small><br />
+
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /><br />
+            <small class="error" id="emailError"></small><br />
+
+            <label for="password">Password:</label><br />
+            <input type="password" id="password" name="password" /><br />
+            <small class="error" id="passwordError"></small><br />
+
+            <button type="submit">Submit</button>
+            <p id="formSuccess" style="color:green;"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
